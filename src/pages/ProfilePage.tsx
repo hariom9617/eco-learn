@@ -70,6 +70,10 @@ export const ProfilePage: React.FC = () => {
                     {user?.role === 'student' ? '🎓 Student' : '👩‍🏫 Teacher'}
                   </Badge>
                 </div>
+                <Button variant="outline" size="sm">
+                <Edit className="w-4 h-4 mr-2" />
+                Edit Profile
+              </Button>
                 
                 <p className="text-muted-foreground mb-4">{user?.email}</p>
                 
@@ -102,10 +106,7 @@ export const ProfilePage: React.FC = () => {
                 )}
               </div>
               
-              <Button variant="outline" size="sm">
-                <Edit className="w-4 h-4 mr-2" />
-                Edit Profile
-              </Button>
+              
             </div>
           </CardContent>
         </Card>
